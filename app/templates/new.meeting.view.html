@@ -1,0 +1,17 @@
+<h2>Neuer Termin</h2>
+<form>
+    <div class="form-group">
+        <label for="titel">Titel</label>
+        <input type="text" class="form-control" required name="title" [(ngModel)]="meetingData.title" placeholder="Thema des Termins">
+    </div>
+    <div class="form-group">
+        <label for="author">Name</label>
+        <input type="text" class="form-control" required name="author"  [(ngModel)]="meetingData.author" placeholder="Autor des Termins">
+    </div>
+    <div class="form-group">
+        <label for="email">Email</label>
+        <input type="Email" class="form-control" required  name="email" [(ngModel)]="meetingData.email" placeholder="Email des Autors"
+        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
+    </div>
+     <button type="button" class="btn btn-success" value="Submit" (click)="saveMeetingData()">Speichern</button>
+</form>

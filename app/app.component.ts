@@ -1,18 +1,15 @@
 import { Component } from '@angular/core';
 import { ROUTER_DIRECTIVES } from '@angular/router';
-import { MeetingService }        from './meeting.service';
+import { MeetingService }        from './services/meeting.backend';
 
-import{AppComponentNew} from './app.component.new';
-import{AppComponentVote} from './app.component.vote';
+import{AppComponentNew} from './components/new.meeting';
+import{AppComponentVote} from './components/vote.meeting';
     
 @Component({
   selector: 'meetme-app',
   template: `
-    <h1>Component Router</h1>
-    <nav>
-      <a [routerLink]="['/new']">New</a><hr/>
-      <a [routerLink]="['/vote/0']">Vote</a>
-    </nav>
+    <h1>MeetMe</h1>
+    <P>Gruppen Vereinbarung</P>
     <router-outlet></router-outlet>
   `,
   directives: [ROUTER_DIRECTIVES],

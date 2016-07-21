@@ -1,11 +1,11 @@
 import { provideRouter, RouterConfig } from '@angular/router';
 import {  } from '@angular/router';
-import { AppComponentNew } from './app.component.new';
-import { AppComponentVote } from './app.component.vote';
+import { AppComponentNew } from './components/new.meeting';
+import { AppComponentVote } from './components/vote.meeting';
 
 const routes: RouterConfig = [
   { path: 'new', component: AppComponentNew },
-  { path: 'vote/:id', component: AppComponentVote },
+  { path: 'vote/:hash', component: AppComponentVote },
   { path: '**', component: AppComponentNew }
 ];
 

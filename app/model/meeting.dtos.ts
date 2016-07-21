@@ -11,7 +11,6 @@ export interface Person {
 }
 
 export interface Participation {
-  times: Date[];
   answers: Answer[];
 }
 
@@ -21,4 +20,5 @@ export class Meeting {
   title: string;
   author: string;
   email: string;
+  times: Date[];
 }

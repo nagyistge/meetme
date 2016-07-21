@@ -13,5 +13,6 @@
         <input type="Email" class="form-control" required  name="email" [(ngModel)]="meetingData.email" placeholder="Email des Autors"
         pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$">
     </div>
+    <edit-datetime></edit-datetime>
      <button type="button" class="btn btn-success" value="Submit" (click)="saveMeetingData()">Speichern</button>
 </form>
